@@ -1,0 +1,88 @@
+
+.body_robbie{
+    
+    border-right: 1px #8e86b5 solid ;
+    border-bottom: 1px #8e86b5 solid;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.un-projet{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.body_robbie h2{
+   margin-top:30px;
+}
+.body_robbie ul{
+   margin-top: 30px;
+}
+.section_ap{
+    width: 50%;
+    margin: auto;
+}
+.new-tb{
+    background: #1F2039;
+    padding: 80px;
+}
+table{
+    position: relative;
+    border-collapse: collapse;
+    margin-left: -200px;
+    width: 150%;
+}
+.tb-title{
+    text-decoration: underline;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2em;
+}
+td,th{
+    border: 2px solid #8e86b5;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+th{
+    color: white;
+    font-size: 1.5em;
+    padding: 30px;
+}
+td{
+    padding: 50px;
+}
+@media screen and (max-widht :996px){
+    .new-tb{display: none;}
+}
+
+/* ==========================================================================
+   DOT CURSOR — curseur point avec traînée (voir dot-cursor.js)
+   ========================================================================== */
+
+/* Calque plein écran qui contient le canvas (ne bloque jamais les clics) */
+.dot-cursor{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+.dot-cursor__canvas{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0;              /* devient visible au premier mouvement de la souris */
+    pointer-events: none;
+}
+
+/* Cache le curseur natif (y compris la main sur les liens) tant que le point est actif */
+html.dot-cursor-active,
+html.dot-cursor-active *{
+    cursor: none !important;
+}

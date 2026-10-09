@@ -1,0 +1,99 @@
+
+.titre{
+    padding: 50px;
+    background-color: #1F2039;
+}
+.portfolio-photos {
+    background: linear-gradient(white, wheat);
+    margin-bottom: -30px; 
+}
+.portfolio-photos h2{
+    color: #242424;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    font-size: 3em;
+}
+
+.grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 300px 300px   ;
+    gap: 15px;
+    margin-bottom: 200px;
+    
+}
+.portrait{
+    margin-top: -100%;
+}
+.grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 300px 300px   ;
+    gap: 15px;
+    margin-bottom: -200px;
+}
+
+.grid-paysages img, .grid-portraits img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 20px;
+   display: block;
+}
+
+
+
+
+.lien{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.photo1{
+    grid-row: 1/3;
+}
+.photo6{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    height: 35%;
+    margin-bottom: -300px;
+
+}
+.photo-hover{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display:flex;
+    align-items:center;
+    justify-content:center;  
+}
+
+
+.lien:hover,.photo-hover:hover{
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+
+.lien:hover,.photo-hover p:hover{
+    color: white;
+    font-size: 2em;
+    opacity: 1;
+}
+.foot{
+    background-color: wheat;
+}
+
+   @media screen and (max-width:996px){
+    .grid-paysages{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .grid-portraits{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+   }
